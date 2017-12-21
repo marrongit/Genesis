@@ -24,10 +24,18 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+    <style>
+      .iconWhite{
+        color: #FFF;
+      }
+      .cursor{
+        cursor: pointer;
+      }
+    </style>
+
   </head>
 
   <body id="page-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container-fluid">
@@ -129,7 +137,7 @@
 
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
-        <div class="row">
+        <div class="row" style="margin: auto;">
           <div class="col-lg-4 offset-4" style="text-align: center;">
             <h1 class="mb-3" style="font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;">Nuestros Clientes</h1><p><i class="fa fa-4x fa-handshake-o text-primary mb-3 sr-icons" aria-hidden="true"></i></p>
           </div>
@@ -234,7 +242,48 @@
         <p><h2 class="mb-4">¿Listo para iniciar tu proyecto con nosotros?</h2></p>
         <p><h2 class="mb-4">¿Quieres mejorar tu proyecto?</h2></p>
         <p><h2 class="mb-4">¡Excelente!</h2></p>
-        <a class="btn btn-light btn-xl sr-button" href="paquetes.html">Ver paquetes</a>
+        <button class="btn btn-light btn-xl sr-button cursor" id="ver_paquetes">Ver paquetes</button>
+      </div>
+      <div id="paquetes">
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6  text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-5x fa-lightbulb-o mb-3 sr-icons text-primary"></i>
+              <h3 class="mb-3">¿Tienes una idea?</h3>
+              <p class="text-muted mb-0">Un negocio en mente es ideal para empezar a hacerlo realidad.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-5x fa-home mb-3 sr-icons text-primary"></i>
+              <h3 class="mb-3">Microempresa</h3>
+              <p class="text-muted mb-0">Tu empresa esta conformada por 10 trabajadores y el propietario.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-5x fa-bicycle mb-3 sr-icons text-primary"></i>
+              <h3 class="mb-3">Pequeña empresa</h3>
+              <p class="text-muted mb-0">Tu empresa esta conformada entre 11 y 49 trabajadores.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6 offset-2 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-5x fa-car mb-3 sr-icons text-primary"></i>
+              <h3 class="mb-3">Mediana empresa</h3>
+              <p class="text-muted mb-0">Tu empresa esta conformada entre 50 y 250 trabajadores.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-5x fa-building-o mb-3 sr-icons text-primary"></i>
+              <h3 class="mb-3">Grande empresa</h3>
+              <p class="text-muted mb-0">Tu empresa esta conformada por mas de 250 trabajadores.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -273,6 +322,13 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+
+    <script>
+      $('#paquetes').hide();
+      $('#ver_paquetes').click(function () {
+          $('#paquetes').show(500);
+      });
+    </script>
 
   </body>
 
